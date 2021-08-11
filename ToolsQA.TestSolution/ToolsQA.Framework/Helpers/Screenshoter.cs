@@ -3,7 +3,7 @@
     using OpenQA.Selenium;
     using System;
 
-    public static class Screenshot
+    public static class Screenshoter
     {
         private static string ConfigureScreenshotName(string outputPath, string screenshotName) =>
             string.Concat(outputPath, @$"\{DateTime.Now:yyyy-MM-dd-HH-mm-ss}{"_" + screenshotName}.png");

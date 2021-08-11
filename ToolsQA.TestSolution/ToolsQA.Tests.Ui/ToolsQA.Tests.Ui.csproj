@@ -1,4 +1,4 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
     <OutputType>Exe</OutputType>
@@ -9,7 +9,7 @@
     <PackageReference Include="DotNetSeleniumExtras.PageObjects.Core" />
     <PackageReference Include="DotNetSeleniumExtras.PageObjects.Core.Linq" />
     <PackageReference Include="Microsoft.NET.Test.Sdk" />
-    <PackageReference Include="NUnit" Version="3.13.2" />
+    <PackageReference Include="NUnit" />
     <PackageReference Include="NUnit3TestAdapter" />
     <PackageReference Include="Selenium.Support" />
     <PackageReference Include="Selenium.WebDriver.ChromeDriver" />
@@ -17,6 +17,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\ToolsQA.Framework\ToolsQA.Framework.csproj" />
+    <ProjectReference Include="..\ToolsQA.Tests.Ui.Pages\ToolsQA.Tests.Ui.Pages.csproj" />
   </ItemGroup>
 
 </Project>

@@ -8,7 +8,8 @@
         [Test]
         public void TestMethod()
         {
-            var val = AppSettings;
+            Log.Info("Debbug mode info");
+            Log.Error("ERROR!");
         }
     }
 }

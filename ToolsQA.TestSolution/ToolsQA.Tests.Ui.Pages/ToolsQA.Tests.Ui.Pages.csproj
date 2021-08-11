@@ -1,7 +1,21 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
     <TargetFramework>net5.0</TargetFramework>
   </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="DotNetSeleniumExtras.PageObjects.Core" />
+    <PackageReference Include="DotNetSeleniumExtras.PageObjects.Core.Linq" />
+    <PackageReference Include="Selenium.Support" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\ToolsQA.Framework\ToolsQA.Framework.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="PageElements\" />
+  </ItemGroup>
 
 </Project>

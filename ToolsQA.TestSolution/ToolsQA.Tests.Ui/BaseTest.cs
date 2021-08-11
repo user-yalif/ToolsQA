@@ -25,10 +25,10 @@
         [TearDown]
         public virtual void DisposeTest()
         {
-            if(TestStatus == TestStatus.Failed)
+            if (TestStatus == TestStatus.Failed)
             {
                 DirectoryUtils.CreateDirectoryIfDoNotExist(ScreenshotsDirectory);
-                var screenshotName = Screenshot.TakeScreenshot(WebDriverManager.Driver, ScreenshotsDirectory, TestName);
+                var screenshotName = Screenshoter.TakeScreenshot(WebDriverManager.Driver, ScreenshotsDirectory, TestName);
             }
 
             WebDriverManager.ReleaseDriver();

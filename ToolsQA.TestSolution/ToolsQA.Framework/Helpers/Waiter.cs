@@ -6,7 +6,7 @@
     using ToolsQA.Framework.Drivers;
     using ExpectedConditions = SeleniumExtras.WaitHelpers.ExpectedConditions;
 
-    public static class Wait
+    public static class Waiter
     {
         private static TimeSpan DefaultTimeout { get; } = TimeSpan.FromSeconds(120);
 
