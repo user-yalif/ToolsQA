@@ -1,4 +1,4 @@
-﻿namespace ToolsQA.Framework.Settings
+﻿namespace ToolsQA.Framework.SetUp
 {
     using Microsoft.Extensions.Configuration;
     using Microsoft.Extensions.DependencyInjection;
@@ -22,13 +22,13 @@
             var environment = GetEnvironment();
             return new ConfigurationBuilder()
                 .SetBasePath(Path.Combine(Directory.GetCurrentDirectory()))
-                .AddJsonFile($@"SettingsFiles\appsettings.{environment}.json", false, true)
+                .AddJsonFile($@"ToolsQA.Famework.Settings\..\SettingsFiles\appsettings.{environment}.json", false, true)
                 .Build();
         }
 
         private static string GetEnvironment()
         {
-            var jsonContent = File.ReadAllText(@"SettingsFiles\environment.json");
+            var jsonContent = File.ReadAllText(@"ToolsQA.Famework.Settings\..\SettingsFiles\environment.json");
 
             return JObject.Parse(jsonContent).SelectToken("Environment").Value<string>();
         }

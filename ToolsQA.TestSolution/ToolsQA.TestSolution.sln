@@ -13,7 +13,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ToolsQA.Tests.Ui.TestData",
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ToolsQA.Tests.Ui.Pages", "ToolsQA.Tests.Ui.Pages\ToolsQA.Tests.Ui.Pages.csproj", "{695CDBC5-D0C8-45DC-836C-8E9B46DFF9E2}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "SolutionItems", "SolutionItems", "{E002CA7C-A41E-4AF4-921A-9A425D6FBE35}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{E002CA7C-A41E-4AF4-921A-9A425D6FBE35}"
 	ProjectSection(SolutionItems) = preProject
 		Directory.Build.props = Directory.Build.props
 		Directory.Build.targets = Directory.Build.targets

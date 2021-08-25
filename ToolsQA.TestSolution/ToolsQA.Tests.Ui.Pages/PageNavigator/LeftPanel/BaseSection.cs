@@ -4,7 +4,7 @@
     using ToolsQA.Framework.Drivers;
     using ToolsQA.Framework.Extentions;
     using ToolsQA.Tests.Ui.Pages.PageNavigator.LeftPanel.Interfaces;
-    using static ToolsQA.Framework.Settings.SettingsConfigurator;
+    using static ToolsQA.Framework.SetUp.SettingsConfigurator;
 
     public class BaseSection : ILeftPanelSection
     {

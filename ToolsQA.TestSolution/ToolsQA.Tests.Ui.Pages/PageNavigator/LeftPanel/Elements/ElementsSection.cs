@@ -4,7 +4,7 @@
 
     public class ElementsSection : BaseSection
     {
-        public TestBoxPage TextBox() => Navigate<TestBoxPage>("text-box");
+        public TextBoxPage TextBox() => Navigate<TextBoxPage>("text-box");
 
         public CheckBoxPage CheckBox() => Navigate<CheckBoxPage>("checkbox");
 

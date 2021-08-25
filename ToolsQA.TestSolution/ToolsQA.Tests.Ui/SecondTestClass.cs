@@ -3,13 +3,16 @@
     using NUnit.Framework;
     using ToolsQA.Framework.Helpers;
     using ToolsQA.Tests.Ui.Pages.PageNavigator;
-    using static ToolsQA.Framework.SetUp.SettingsConfigurator;
 
-    public class InitialTestClass : BaseTest
+    public class SecondTestClass : BaseTest
     {
         [Test]
         public void TestMethod()
         {
+            Logger.Log.Info("First log {0}", nameof(SecondTestClass));
+
+            Logger.Log.Warn("Warning {0}", "This is the second log message");
+
             var textBoxPage = PageNavigator.Elements.TextBox();
 
             var headerText = textBoxPage.OnHeader().GetText();

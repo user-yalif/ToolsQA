@@ -4,7 +4,9 @@
     using OpenQA.Selenium;
     using System;
     using System.Collections.Concurrent;
-    using static ToolsQA.Framework.Settings.SettingsConfigurator;
+    using ToolsQA.Framework.Drivers.Implementations;
+    using ToolsQA.Framework.Helpers;
+    using static ToolsQA.Framework.SetUp.SettingsConfigurator;
 
     public static class WebDriverManager
     {
@@ -16,22 +18,23 @@
         {
             get
             {
-                if (DriversInUse.ContainsKey(CurrentKey))
+                if (!DriversInUse.ContainsKey(CurrentKey))
                 {
-                    return DriversInUse[CurrentKey];
-                }
-                else
-                {
-                    var testId = TestContext.CurrentContext.Test.ID;
                     var driver = new DriverFactory().GetDriver(AppSettings.Browser).SetUp(PathToDriver);
 
                     if (driver == null)
                     {
-                        throw new NullReferenceException("WebDriver instance was not initialized.");
+                        Logger.Log.Error("WebDriver instance was not created!");
+
+                        throw new NullReferenceException("WebDriver instance was not initialized!");
                     }
 
-                    return DriversInUse[testId] = driver;
+                    DriversInUse[CurrentKey] = driver;
+
+                    Logger.Log.Info("WebDriver {{ Thread Id: {0}; Session Id: {1} }} was succesfully created.", CurrentKey, ((WebDriver)driver).SessionId);
                 }
+
+                return DriversInUse[CurrentKey];
             }
         }
 
@@ -39,27 +42,16 @@
         {
             if (DriversInUse.ContainsKey(CurrentKey))
             {
+                var sessionId = ((WebDriver)DriversInUse[CurrentKey]).SessionId;
+
                 DriversInUse[CurrentKey].Quit();
 
                 if (!DriversInUse.TryRemove(CurrentKey, out _))
                 {
                     throw new ArgumentNullException();
                 }
-            }
 
-            if (!DriversInUse.IsEmpty)
-            {
-                var keys = DriversInUse.Keys;
-
-                foreach (var key in keys)
-                {
-                    DriversInUse[key].Quit();
-
-                    if (!DriversInUse.TryRemove(key, out _))
-                    {
-                        throw new ArgumentNullException();
-                    }
-                }
+                Logger.Log.Info("WebDriver {{ Thread Id: {0}; Session Id: {1} }} was succesfully removed.", CurrentKey, sessionId);
             }
         }
     }
