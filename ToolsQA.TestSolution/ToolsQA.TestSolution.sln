@@ -3,24 +3,24 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.31515.178
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ToolsQA.Framework", "ToolsQA.Framework\ToolsQA.Framework.csproj", "{1730959C-9CBC-4121-A2B1-4C9677AEADA6}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ToolsQA.Framework", "ToolsQA.Framework\ToolsQA.Framework.csproj", "{1730959C-9CBC-4121-A2B1-4C9677AEADA6}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ToolsQA.Framework.Settings", "ToolsQA.Framework.Settings\ToolsQA.Framework.Settings.csproj", "{B0AD18D5-E2D9-425A-B7E1-1B83B2FC58C2}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ToolsQA.Framework.Settings", "ToolsQA.Framework.Settings\ToolsQA.Framework.Settings.csproj", "{B0AD18D5-E2D9-425A-B7E1-1B83B2FC58C2}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ToolsQA.Tests.Ui.Common", "ToolsQA.Tests.Ui.Common\ToolsQA.Tests.Ui.Common.csproj", "{8EB67510-C9BF-4D29-B503-EF2AEB1E5EBB}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ToolsQA.Tests.Ui.Common", "ToolsQA.Tests.Ui.Common\ToolsQA.Tests.Ui.Common.csproj", "{8EB67510-C9BF-4D29-B503-EF2AEB1E5EBB}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ToolsQA.Tests.Ui.TestData", "ToolsQA.Tests.Ui.TestData\ToolsQA.Tests.Ui.TestData.csproj", "{23EB3353-86CE-4DA2-B327-D3CD9B21086D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ToolsQA.Tests.Ui.TestData", "ToolsQA.Tests.Ui.TestData\ToolsQA.Tests.Ui.TestData.csproj", "{23EB3353-86CE-4DA2-B327-D3CD9B21086D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ToolsQA.Tests.Ui.Pages", "ToolsQA.Tests.Ui.Pages\ToolsQA.Tests.Ui.Pages.csproj", "{695CDBC5-D0C8-45DC-836C-8E9B46DFF9E2}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ToolsQA.Tests.Ui.Pages", "ToolsQA.Tests.Ui.Pages\ToolsQA.Tests.Ui.Pages.csproj", "{695CDBC5-D0C8-45DC-836C-8E9B46DFF9E2}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "SolutionItems", "SolutionItems", "{E002CA7C-A41E-4AF4-921A-9A425D6FBE35}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{E002CA7C-A41E-4AF4-921A-9A425D6FBE35}"
 	ProjectSection(SolutionItems) = preProject
 		Directory.Build.props = Directory.Build.props
 		Directory.Build.targets = Directory.Build.targets
 		NuGet.Config = NuGet.Config
 	EndProjectSection
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ToolsQA.Tests.Ui", "ToolsQA.Tests.Ui\ToolsQA.Tests.Ui.csproj", "{4FE0C393-7D03-4B1E-AF3A-F39D2F06CB72}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ToolsQA.Tests.Ui", "ToolsQA.Tests.Ui\ToolsQA.Tests.Ui.csproj", "{4FE0C393-7D03-4B1E-AF3A-F39D2F06CB72}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

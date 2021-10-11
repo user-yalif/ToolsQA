@@ -4,7 +4,7 @@
 
     public static class DirectoryUtils
     {
-        public static void CreateDirectoryIfDoNotExist(string pathToDirectory)
+        public static void CreateDirectoryIfDoesNotExist(string pathToDirectory)
         {
             if (!Directory.Exists(pathToDirectory))
             {

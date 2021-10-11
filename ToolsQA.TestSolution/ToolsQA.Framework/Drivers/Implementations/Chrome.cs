@@ -1,4 +1,4 @@
-﻿namespace ToolsQA.Framework.Drivers
+﻿namespace ToolsQA.Framework.Drivers.Implementations
 {
     using OpenQA.Selenium;
     using OpenQA.Selenium.Chrome;
@@ -9,7 +9,7 @@
     {
         private static ChromeOptions GetChromeOptions(string downloadPath)
         {
-            ChromeOptions options = new ();
+            ChromeOptions options = new();
 
             //options.AddArgument("--headless");
             options.AddArgument("--start-maximized");
